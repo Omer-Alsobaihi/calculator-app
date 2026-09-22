@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- styles for calculator buttons -->
+    <style name="CalculatorButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalculatorButtonWide">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_columnSpan">2</item>
+        <item name="android:layout_columnWeight">2</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalculatorButtonOperator">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/operator_background</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/operator_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalculatorButtonClear">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/clear_background</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/clear_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CalculatorButtonEqual">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/equal_background</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/equal_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

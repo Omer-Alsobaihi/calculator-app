@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Display -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/display_background"
+        android:gravity="end|center_vertical"
+        android:padding="24dp"
+        android:text="0"
+        android:textColor="@color/display_text"
+        android:textSize="48sp"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="600dp" />
+
+    <!-- Button Grid -->
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHeight_percent="0.75"
+        app:layout_constraintWidth_max="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display">
+
+        <!-- Row 1: 7, 8, 9, ÷ -->
+        <Button android:id="@+id/btn_7" android:text="7" style="@style/CalculatorButton" />
+        <Button android:id="@+id/btn_8" android:text="8" style="@style/CalculatorButton" />
+        <Button android:id="@+id/btn_9" android:text="9" style="@style/CalculatorButton" />
+        <Button android:id="@+id/btn_divide" android:text="÷" style="@style/CalculatorButtonOperator" />
+
+        <!-- Row 2: 4, 5, 6, × -->
+        <Button android:id="@+id/btn_4" android:text="4" style="@style/CalculatorButton" />
+        <Button android:id="@+id/btn_5" android:text="5" style="@style/CalculatorButton" />
+        <Button android:id="@+id/btn_6" android:text="6" style="@style/CalculatorButton" />
+        <Button android:id="@+id/btn_multiply" android:text="×" style="@style/CalculatorButtonOperator" />
+
+        <!-- Row 3: 1, 2, 3, - -->
+        <Button android:id="@+id/btn_1" android:text="1" style="@style/CalculatorButton" />
+        <Button android:id="@+id/btn_2" android:text="2" style="@style/CalculatorButton" />
+        <Button android:id="@+id/btn_3" android:text="3" style="@style/CalculatorButton" />
+        <Button android:id="@+id/btn_subtract" android:text="-" style="@style/CalculatorButtonOperator" />
+
+        <!-- Row 4: C, ±, %, + -->
+        <Button android:id="@+id/btn_clear" android:text="C" style="@style/CalculatorButtonClear" />
+        <Button android:id="@+id/btn_negate" android:text="±" style="@style/CalculatorButton" />
+        <Button android:id="@+id/btn_percent" android:text="%" style="@style/CalculatorButton" />
+        <Button android:id="@+id/btn_add" android:text="+" style="@style/CalculatorButtonOperator" />
+
+        <!-- Row 5: 0 (span 2 cols), ., ⌫, = -->
+        <Button android:id="@+id/btn_0" android:text="0" android:layout_columnSpan="2" style="@style/CalculatorButtonWide" />
+        <Button android:id="@+id/btn_decimal" android:text="." style="@style/CalculatorButton" />
+        <Button android:id="@+id/btn_delete" android:text="⌫" style="@style/CalculatorButtonOperator" />
+        <Button android:id="@+id/btn_equal" android:text="=" style="@style/CalculatorButtonEqual" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
